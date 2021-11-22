@@ -34,14 +34,13 @@ public class PlaybillManager {
 
     public Playbill[] listOfMovies(int recentMovies) {
         int resultLength = 0;
-        if (recentMovies < 10) {
+        if (recentMovies <= movies.length) {
             resultLength = recentMovies;
         } else {
-            resultLength = 10;
+            resultLength = movies.length;
         }
 
         Playbill[] result = new Playbill[resultLength];
-        Playbill[] movies = getMovies();
 
         for (int i = 0; i < resultLength; i++) {
             int j = movies.length - i - 1;

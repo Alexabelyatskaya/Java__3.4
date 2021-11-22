@@ -131,7 +131,7 @@ public class PlaybillManagerTest {
         manager.addMovie(eleven);
         manager.addMovie(twelve);
 
-        assertArrayEquals(new Playbill[]{twelve, eleven, ten, nine, eight, seven, six, five, four, three}, manager.listOfMovies(12));
+        assertArrayEquals(new Playbill[]{twelve, eleven, ten, nine, eight, seven, six, five, four, three}, manager.listOfMovies(10));
     }
 
     @Test
